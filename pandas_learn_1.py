@@ -18,6 +18,7 @@ print(data_frame['new'])
 print(data_frame)
 # delete column
 data_frame.drop('new', axis=1, inplace=True)
+print('new dropped:')
 print(data_frame)
 # delete row
 data_frame.drop('E', axis=0, inplace=True)
@@ -32,6 +33,7 @@ print(data_frame.loc['B']['Y'])
 # fetch subset for data frame
 print(data_frame.loc[['A', 'B']][['W', 'Y']])
 # conditions on a data frame
+print('conditions on a data frame')
 print(data_frame[data_frame > 0.5])
 # passing in a series like below we don't get the Nan lines
 print(data_frame[data_frame['W'] > 0])
