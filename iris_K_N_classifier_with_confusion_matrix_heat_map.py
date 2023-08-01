@@ -34,7 +34,6 @@ print(f"Confusion matrix: \n{con_matrix}")
 print(f"Classification Report: \n{classification_report(y_test, y_predict)}")
 # plot confusion matrix on a heatmap
 sns.heatmap(con_matrix, annot=True)
-plt.legend()
 plt.xlabel("Actual Value")
 plt.ylabel("Predicted Value")
 plt.title("Confusion Matrix")
